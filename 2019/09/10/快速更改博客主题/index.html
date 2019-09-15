@@ -17,7 +17,7 @@
 <meta property="og:description" content="上线这个博客，hexo的默认的模板比较丑，于是自己就找了其他hexo的模板，于是在网上参考了如何更换博客的方法。大部分都是使用命令行的方式。如果网速不好，下载的会非常慢。">
 <meta property="og:locale" content="en-CN">
 <meta property="og:image" content="http://image.liuxianan.com/201608/20160818_134500_245_0912.png">
-<meta property="og:updated_time" content="2019-09-12T12:11:57.648Z">
+<meta property="og:updated_time" content="2019-09-15T07:36:29.745Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速更改博客主题 ">
 <meta name="twitter:description" content="上线这个博客，hexo的默认的模板比较丑，于是自己就找了其他hexo的模板，于是在网上参考了如何更换博客的方法。大部分都是使用命令行的方式。如果网速不好，下载的会非常慢。">
@@ -169,6 +169,33 @@
         
       </header>
     
+	<!-- 目录内容 -->
+
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+	<div id="toc-article" class="toc-article">
+	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+		<strong class="toc-title">文章目录</strong>
+           
+         </div>
+   <script type="text/javascript">
+	function showToc(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:block");
+		show_toc_btn.setAttribute("style","display:none");
+		};
+	function showBtn(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:none");
+		show_toc_btn.setAttribute("style","display:block");
+		};
+   </script>
+      		
+<!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
         <p>上线这个博客，hexo的默认的模板比较丑，于是自己就找了其他hexo的模板，于是在网上参考了如何更换<br>博客的方法。大部分都是使用命令行的方式。如果网速不好，下载的会非常慢。</p>
@@ -330,6 +357,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -355,17 +395,21 @@
     	<div class="footer-left">
     		&copy; 2019 Pluto
     	</div>
-		<script async src="//busuanzi.ibruce.info/
-		busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_container_site_pv">
-          本站总访问量<span id="busuanzi_value_site_pv"></span>次
-        </span>
       	</div>
     </div>
   </div>
 </footer>
 <!--页面点击小红心-->
 <script type="text/javascript" src="/love.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+<span class="post-meta-divider">|</span>
+<span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人</span>
+
+
+
+
 
 
 
