@@ -6,17 +6,32 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://HiRenZeHui.github.io">
-  <title>Archives: 2019 | Pluto&#39;s的博客</title>
+  <title>jsp代码连接mysql,插入数据中文乱码问题，全套解决方案 | Pluto&#39;s的博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Pluto&#39;s的博客">
-<meta property="og:url" content="https://HiRenZeHui.github.io/archives/2019/index.html">
+  <meta name="description" content="1. 前言1.1发现问题最近在学习java web时，在学习到myeclipse连接mysql数据库时，遇到了往mysql插入中文乱码问题。在网上查询了很多种解决方案，最终修改了三处地方，问题得到解决。适用于大多数情况。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jsp代码连接mysql,插入数据中文乱码问题，全套解决方案">
+<meta property="og:url" content="https://HiRenZeHui.github.io/2019/10/12/jsp代码连接mysql-插入数据中文乱码问题，全套解决方案/index.html">
 <meta property="og:site_name" content="Pluto&#39;s的博客">
+<meta property="og:description" content="1. 前言1.1发现问题最近在学习java web时，在学习到myeclipse连接mysql数据库时，遇到了往mysql插入中文乱码问题。在网上查询了很多种解决方案，最终修改了三处地方，问题得到解决。适用于大多数情况。">
 <meta property="og:locale" content="en-CN">
+<meta property="og:image" content="https://hirenzehui.github.io/images/1.png">
+<meta property="og:image" content="https://hirenzehui.github.io/images/2.png">
+<meta property="og:image" content="https://hirenzehui.github.io/images/3.png">
+<meta property="og:image" content="https://hirenzehui.github.io/images/4.png">
+<meta property="og:image" content="https://hirenzehui.github.io/images/5.png">
+<meta property="og:image" content="https://hirenzehui.github.io/images/6.png">
+<meta property="og:image" content="https://hirenzehui.github.io/images/7.png">
+<meta property="og:image" content="https://hirenzehui.github.io/images/8.png">
+<meta property="og:image" content="https://hirenzehui.github.io/images/9.png">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1570973864335&di=97fdf0ecd1571536cee9498e90bdbbb4&imgtype=jpg&src=http%3A%2F%2F4.pic.pc6.com%2Fup%2F2017-5%2F20175319471570248696.png">
+<meta property="og:updated_time" content="2019-10-13T10:50:25.690Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pluto&#39;s的博客">
+<meta name="twitter:title" content="jsp代码连接mysql,插入数据中文乱码问题，全套解决方案">
+<meta name="twitter:description" content="1. 前言1.1发现问题最近在学习java web时，在学习到myeclipse连接mysql数据库时，遇到了往mysql插入中文乱码问题。在网上查询了很多种解决方案，最终修改了三处地方，问题得到解决。适用于大多数情况。">
+<meta name="twitter:image" content="https://hirenzehui.github.io/images/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Pluto&#39;s的博客" type="application/atom+xml">
   
@@ -190,42 +205,160 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-jsp代码连接mysql-插入数据中文乱码问题，全套解决方案" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/12/jsp代码连接mysql-插入数据中文乱码问题，全套解决方案/" class="archive-article-date">
-        <time datetime="2019-10-12T07:32:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/10/12/jsp代码连接mysql-插入数据中文乱码问题，全套解决方案/" target="_blank">jsp代码连接mysql,插入数据中文乱码问题，全套解决方案</a>
   
+    <h1 class="article-title" itemprop="name">
+      jsp代码连接mysql,插入数据中文乱码问题，全套解决方案
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
-          
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/10/12/jsp代码连接mysql-插入数据中文乱码问题，全套解决方案/" class="archive-article-date">
+        <time datetime="2019-10-12T07:32:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">735字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">3分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1><span id="1-前言">1. 前言</span></h1><h2><span id="11发现问题">1.1发现问题</span></h2><p>最近在学习java web时，在学习到myeclipse连接mysql数据库时，遇到了往mysql插入中文乱码问题。在网上查询了很多种解决方案，最终修改了三处地方，问题得到解决。适用于大多数情况。</p>
+<a id="more"></a>
+
+<h2><span id="12-解决问题">1.2 解决问题</span></h2><p>（1）代码问题</p>
+<p>（2）tomcat服务器配置问题，Tomcat配置未指定”utf-8”</p>
+<p>（3）mysql数据库问题，在创建数据库时未指定编码格式。</p>
+<h1><span id="2修改">2.修改</span></h1><h2><span id="21测试代码">2.1测试代码</span></h2><p>页面提交代码</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">(```)</span><br><span class="line">	&lt;form action=<span class="string">"demo_0.1.jsp"</span> method=<span class="string">"post"</span>&gt;</span><br><span class="line">		&lt;table align=<span class="string">"left"</span>&gt;</span><br><span class="line">			&lt;td&gt;请您输入用户名：&lt;/td&gt;</span><br><span class="line">			&lt;td&gt;&lt;input name="username" type="text"&gt;&lt;/td&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td&gt;请您输入密码：&lt;/td&gt;</span><br><span class="line">				&lt;td&gt;&lt;input name="password" type="text"&gt;&lt;/td&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td&gt;&lt;input type="submit" value="添加用户"&gt;&lt;/td&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">		&lt;/table&gt;</span><br><span class="line">	&lt;/form&gt;</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
+
+<p>连接数据库代码</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">(```)</span><br><span class="line">	&lt;%</span><br><span class="line">	request.setCharacterEncoding(<span class="string">"utf-8"</span>);</span><br><span class="line">    String username = request.getParameter(<span class="string">"username"</span>);</span><br><span class="line">    String password = request.getParameter(<span class="string">"password"</span>);</span><br><span class="line">    %&gt;</span><br><span class="line">	&lt;%</span><br><span class="line">    Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">    Connection conn = DriverManager.getConnection(</span><br><span class="line"><span class="string">"jdbc:mysql://localhost:3306/school?user=root&amp;password=123456&amp;useUnicode=true&amp;characterEncoding=utf-8"</span>);</span><br><span class="line">    Statement stmt = conn.createStatement();</span><br><span class="line">    String sql = <span class="string">"insert into user (username,password) values ('"</span>+</span><br><span class="line">      username+<span class="string">"','"</span>+password + <span class="string">"')"</span>;</span><br><span class="line">    <span class="keyword">int</span> i = stmt.executeUpdate(sql);</span><br><span class="line">    out.print(<span class="string">"添加成功 "</span>+username+<span class="string">" "</span>);</span><br><span class="line">    stmt.close();</span><br><span class="line">    conn.close();</span><br><span class="line">    %&gt;</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
+
+<p>这里只贴出了<body><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":250,"height":350},"mobile":{"show":true},"react":{"opacity":0.7}});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":250,"height":350},"mobile":{"show":true},"react":{"opacity":0.7}});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":250,"height":350},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>里的代码，代码开头 pageEncoding=”utf-8” 这里别忘了修改。</p>
+<h2><span id="22mysql数据库配置">2.2mysql数据库配置</span></h2><h3><span id="221查看数据库编码格式">2.2.1查看数据库编码格式</span></h3><p>先登录服务器，进到你的数据库，登录数据库命令</p>
+<p>然后执行下面的命令查看你数据库的编码格式<br>show variables like ‘char%’;</p>
+<p><img src="/images/1.png" alt="alt"></p>
+<p>点击左上角黄色闪电，执行。执行结果如下：</p>
+<p><img src="/images/2.png" alt="alt"></p>
+<p>如果执行结果和我一样，数据库编码配置没有问题,我这里已经是更改过的。不同的话，value 显示的是latin1的，这是MySQL的默认编码。这时候还要去修改数据库配置。</p>
+<h3><span id="222修改数据库配置">2.2.2修改数据库配置</span></h3><p>找到my.ini文件 一般就在C:\ProgramData\MySQL\MySQL Server 5.7路径下，如果实在找不到建议下载一个Everything，查找文件速度非常快。</p>
+<p><img src="/images/3.png" alt="alt"></p>
+<p>找到 “# MySQL client library initialization.”这一句话的下面“[client]” 添加  default-character-set=utf8 这一句话<br><img src="/images/4.png" alt="alt"></p>
+<p>保存之后查看，可以看到数据库编码已经改变。有可能chaaracter_set_database的valeu还是latin1</p>
+<p>执行下面的命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`set character_set_connection=utf8;`</span><br></pre></td></tr></table></figure>
+
+<p>执行之后，和2.2.1的结果一样。</p>
+<h2><span id="23-tomcat服务器配置">2.3 tomcat服务器配置</span></h2><p>找到自己tomcat安装路径，并且找到  server.xml 文件 ，这个文件里只修改两处。</p>
+<p>第一处：</p>
+<p><img src="/images/5.png" alt="alt"></p>
+<p>第二处：</p>
+<p><img src="/images/6.png" alt="alt"></p>
+<p>encoding 都修改为 utf-8 ，其他的不要修改。</p>
+<h2><span id="3测试">3.测试</span></h2><h3><span id="31-运行代码">3.1 运行代码</span></h3><p>运行上面我post的代码：</p>
+<p><img src="/images/7.png" alt="alt"></p>
+<p><img src="/images/8.png" alt="alt"></p>
+<p>再去mysql数据库的数据：</p>
+<p><img src="/images/9.png" alt="alt"></p>
+<p>哈哈哈哈哈，完美添加！！！</p>
+<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1570973864335&di=97fdf0ecd1571536cee9498e90bdbbb4&imgtype=jpg&src=http%3A%2F%2F4.pic.pc6.com%2Fup%2F2017-5%2F20175319471570248696.png" alt></p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alibaba.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weichat.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          Pluto
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://HiRenZeHui.github.io/2019/10/12/jsp代码连接mysql-插入数据中文乱码问题，全套解决方案/" title="jsp代码连接mysql,插入数据中文乱码问题，全套解决方案" target="_blank">https://HiRenZeHui.github.io/2019/10/12/jsp代码连接mysql-插入数据中文乱码问题，全套解决方案/</a>
+        </li>
+        <li>
+          <strong>版权声明： </strong>
+          本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+        </li>
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -238,114 +371,118 @@
 	</div>
 
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://HiRenZeHui.github.io/2019/10/12/jsp代码连接mysql-插入数据中文乱码问题，全套解决方案/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/09/14/随记01/" class="archive-article-date">
-        <time datetime="2019-09-14T14:58:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-14</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/14/随记01/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">随记01</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/09/14/随记01/" target="_blank">随记01</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">1. 前言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">1.1.</span> <span class="toc-text">1.1发现问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 解决问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">2.</span> <span class="toc-text">2.修改</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">2.1.</span> <span class="toc-text">2.1测试代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">2.2.</span> <span class="toc-text">2.2mysql数据库配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.2.1查看数据库编码格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2.2修改数据库配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 tomcat服务器配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">2.4.</span> <span class="toc-text">3.测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.4.1.</span> <span class="toc-text">3.1 运行代码</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/09/10/快速更改博客主题/" class="archive-article-date">
-        <time datetime="2019-09-10T03:46:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-10</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/09/10/快速更改博客主题/" target="_blank">快速更改博客主题 </a>
-  
-    </h1>
-  
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">themes</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
+
+
+
+
 
 
           </div>
@@ -386,8 +523,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
