@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="description" content="1. 前言1.1发现问题最近在学习java web时，在学习到myeclipse连接mysql数据库时，遇到了往mysql插入中文乱码问题。在网上查询了很多种解决方案，最终修改了三处地方，问题得到解决。适用于大多数情况。">
+<meta name="keywords" content="java web">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jsp代码连接mysql,插入数据中文乱码问题，全套解决方案">
 <meta property="og:url" content="https://HiRenZeHui.github.io/2019/10/12/jsp代码连接mysql-插入数据中文乱码问题，全套解决方案/index.html">
@@ -27,7 +28,7 @@
 <meta property="og:image" content="https://hirenzehui.github.io/images/8.png">
 <meta property="og:image" content="https://hirenzehui.github.io/images/9.png">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1570973864335&di=97fdf0ecd1571536cee9498e90bdbbb4&imgtype=jpg&src=http%3A%2F%2F4.pic.pc6.com%2Fup%2F2017-5%2F20175319471570248696.png">
-<meta property="og:updated_time" content="2019-10-13T10:50:25.690Z">
+<meta property="og:updated_time" content="2019-10-13T15:32:11.498Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jsp代码连接mysql,插入数据中文乱码问题，全套解决方案">
 <meta name="twitter:description" content="1. 前言1.1发现问题最近在学习java web时，在学习到myeclipse连接mysql数据库时，遇到了往mysql插入中文乱码问题。在网上查询了很多种解决方案，最终修改了三处地方，问题得到解决。适用于大多数情况。">
@@ -358,6 +359,17 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">java web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
@@ -484,6 +496,33 @@
 
 
 
+        <!-- 目录内容 -->
+        
+            <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+            <span class="btn-bg"></span>
+            <span class="btn-text">文章导航</span>
+            </p>
+            <div id="toc-article" class="toc-article">
+                <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+                <strong class="toc-title">文章目录</strong>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">1. 前言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">1.1.</span> <span class="toc-text">1.1发现问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 解决问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">2.</span> <span class="toc-text">2.修改</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">2.1.</span> <span class="toc-text">2.1测试代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">2.2.</span> <span class="toc-text">2.2mysql数据库配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.2.1查看数据库编码格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2.2修改数据库配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 tomcat服务器配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">2.4.</span> <span class="toc-text">3.测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">2.4.1.</span> <span class="toc-text">3.1 运行代码</span></a></li></ol></li></ol></li></ol>
+           </div>
+           <script type="text/javascript">
+            function showToc(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:block");
+                show_toc_btn.setAttribute("style","display:none");
+                };
+            function showBtn(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:none");
+                show_toc_btn.setAttribute("style","display:block");
+                };
+           </script>
+             
+        <!-- 目录内容结束 -->
 
           </div>
         </div>
@@ -596,6 +635,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">themes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">java web</a>
               </li>
              
               <li class="article-tag-list-item">
